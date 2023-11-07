@@ -16,8 +16,8 @@ import { AuthorizationGuard } from './authz/authorization.guard';
     subscriptions: {
       'graphql-ws': true,
     },
-    path: '/graphql',
     playground: true,
+    introspection: true
     }),
     TypeOrmModule.forRoot({
       type: 'sqlite',
